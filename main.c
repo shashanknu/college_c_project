@@ -198,7 +198,7 @@ void passw()
     printf(",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,");
 if(o==1)
         {
-        printf("\n\n\n\n\n\n\n\n\nENTER YOUR EMAIL ID :\n\t\t\t\t");
+        printf("\n\n\nENTER YOUR EMAIL ID :\n\t\t\t\t");
         system("./bash2.sh");
         printf("ENTER YOUR PASSWORD:\n\t\t\t\t");
         system("./bash.sh");
@@ -221,14 +221,16 @@ if(o==1)
     }
     else if(o==2)
     {
-        printf("\nENTER YOUR EMAIL ID\n");
+    printf("\nENTER YOUR EMAIL ID\n");
     scanf("%s",email);
+    printf("ENTER YOUR PASSWORD:\n");
     system("./bash.sh");
     ptr = fopen("output.txt","r");
     rewind(ptr);
     fscanf(ptr,"%s",&passwd);
     fpt = fopen("udata.csv", "a+");
     fprintf(fpt,"%s, %s,\n",email,passwd);
+    passw();
     }
 
   
