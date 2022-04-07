@@ -36,6 +36,7 @@ void add()
             total=total+451;
         }
         else if(b==2)
+
         {
             total=total+195;
         }
@@ -212,11 +213,12 @@ if(o==1)
         if(strcmp(passwd,cpass)==0)
             {
                     printf("\n\t\t\t\t access granted\n");
-                    add();
+                    add ();
             }
         else
             {
                 printf("\n\t\t\t\t invalid data please try again");
+                passw();
             }
     }
     else if(o==2)
